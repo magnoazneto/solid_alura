@@ -49,4 +49,9 @@ public class Funcionario {
         this.salarioBase = salarioBase;
     }
 
+    // Essa classe inteira continua sendo coesa porque só trata de regras de funcionário.
+
+    public double calculaSalario() {
+        return cargo.getRegra().calcula(this);
+    }
 }
